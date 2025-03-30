@@ -1,5 +1,0 @@
-flask
-rdkit
-py3Dmol
-gunicorn==20.1.0
-
