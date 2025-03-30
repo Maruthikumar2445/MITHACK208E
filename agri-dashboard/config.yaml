@@ -1,0 +1,42 @@
+api_keys:
+  openweathermap: "YOUR_OPENWEATHERMAP_API_KEY"
+  soilgrids: "YOUR_SOILGRIDS_API_KEY"
+  nasa_power: "YOUR_NASA_POWER_API_KEY"
+  llama_vision: "YOUR_LLAMA_VISION_API_KEY"
+
+endpoints:
+  llama_vision: "https://Llama-3-2-90B-Vision-Instruct-rw.southcentralus.models.ai.azure.com/v1/chat/completions"
+
+model_deployment:
+  crop_health_model: "path/to/crop_health_model"
+  irrigation_model: "path/to/irrigation_model"
+  pest_detection_model: "path/to/pest_detection_model"
+
+app_settings:
+  use_mock_data: true
+  default_location:
+    latitude: 20.5937
+    longitude: 78.9629
+  
+  supported_languages:
+    - "English"
+    - "Hindi"
+    - "Tamil"
+    - "Telugu"
+
+languages_supported:
+  - "en"
+  - "es"
+  - "fr"
+  - "de"
+
+data_sources:
+  weather_data: "OpenWeatherMap"
+  soil_data: "SoilGrids"
+  historical_weather_data: "NASA POWER"
+
+model_settings:
+  pest_detection:
+    confidence_threshold: 0.7
+  crop_health:
+    analysis_depth: "detailed"
